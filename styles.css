@@ -1,65 +1,107 @@
 body{
-	font-family: 'Itim', cursive;
-	display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.left-pane {
-	float: left;
-	background-color: white;
-	width: 25vw;
-	height: 100vh;
-
+#container{
+    background-color: #099dfd;
+}
+.left-pane{
+    background-color: white;
+    width: 20vw;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.right-pane {
-	background-color: #099dfd;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	flex: 1;
-	flex-direction: column;
+.logo{
+    width: 60%;
+    padding-top: 30px;
+    margin: 0 auto;
 }
 
-img{
-	max-width: 100%;
-	max-height: 100%;
-}
-
-.img-container{
-	width: 240px;
-	margin: 60px auto 0 auto;
+#img-container{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .form-container{
-	margin-top: 100px;
+    margin-top: 20vh;
+}
 
+#headingText{
+    font-size: 1.5rem;
+
+}
+#highlighted{
+    color: #099dfd;
+}
+
+#email{
+    margin-top: 20px;
+}
+
+.warning {
+    color: red;
+    display: none;
 }
 
 input{
-	margin-top: 20px;
-	border: 2px solid #099dfd;
-	width: 80%;
-	font-size: 17px;
-	border-radius: 5px;
-	padding-right: 10px;
-	padding-left: 10px: 
+    margin-top: 10px;
+    padding: 5px;
+    width: 90%;
+    font-size: 1.25rem;
+    border: 2px solid #099dfd;
+    border-radius: 5px;
+}
+.submitButton{
+    background-color: #099dfd;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: white;
+    border: none;
+    font-size: 1.25rem;
+    border-radius: 10px;
 }
 
-button{
-	border: none;
-	background-color: #099dfd;
-	font-size: 17px;
-	padding-inline: 20px;
-	color: white;
+#flexContainer{
+    display: flex;
+    flex-direction: row;
 }
 
-button:hover{
-	background-color: #5abdff;
+#right-pane{
+    flex: 1;
+    text-align: center;
 }
 
-.illustration-container{
-	border-radius: 300px;
-	background-color: #ffffff59;
-	width: 600px;
-	height: 600px;
+#circleContainer{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 650px;
+    height: 650px;
+    border-radius: 1000px;
+    background-color: #ffffff4b;
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+#illustration{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#illustrationContainer{
+    width: 500px;
+    margin: auto;
+    padding-bottom: 45px;
+}
+
+#bottomText{
+    font-size: 1.75rem;
+    color: white;
 }
