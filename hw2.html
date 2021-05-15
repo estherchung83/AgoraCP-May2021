@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Homework 2 - Javascript Calculator</title>
+	</head>
+
+	<body>
+
+		<input type="number" id="input1" placeholder="input 1">
+		<input type="number" id="input2" placeholder="input 2">
+
+		<button id="add" onclick="add()">Add</button>
+		<button id="sub" onclick="sub()">Subtract</button>
+		<button id="mult" onclick="mult()">Multiply</button>
+		<button id="divide" onclick="divide()">Divide</button>
+
+		<input type="number" id="output" placeholder="output">
+
+		<script>
+		
+			function add(){
+				let input1 = document.getElementById("input1").value;
+				let input2 = document.getElementById("input2").value;	
+				document.getElementById("output").value = parseInt(input1) + parseInt(input2);
+			}
+
+			function sub(){
+				let input1 = document.getElementById("input1").value;
+				let input2 = document.getElementById("input2").value;	
+				document.getElementById("output").value = parseInt(input1) - parseInt(input2);
+			}
+
+			function mult(){
+				let input1 = document.getElementById("input1").value;
+				let input2 = document.getElementById("input2").value;	
+				document.getElementById("output").value = parseInt(input1) * parseInt(input2);
+			}
+
+			function divide(){
+				let input1 = document.getElementById("input1").value;
+				let input2 = document.getElementById("input2").value;	
+				document.getElementById("output").value = parseInt(input1) / parseInt(input2);
+			}
+
+		</script>
+	</body>
+
+</html>
